@@ -1,0 +1,164 @@
+/*reset code and common starts here */
+ * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-transform: none;
+    outline: none;
+    font-weight: 400;
+    text-decoration: none;
+ }
+ html{
+    background-color: #fff;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;;
+ }
+ body{
+    background-color: #fff;
+    width: 100rem;
+    max-width: 100%;
+    margin: auto;
+   position: relative;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+ }
+/*reset code and common end here */
+
+
+
+
+
+
+/* The Header Start here*/
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 5vh;
+    border: 1px solid black;
+    border-radius: 10px;
+ }
+ .logo-figure{
+    border: 0.1rem solid white;
+ }
+ .logo  {
+    font-size: 4rem;
+ }
+ nav ul {
+   display: flex;
+   gap: 2rem;
+ }
+ nav ul li {
+    padding: 2rem;
+    transition: all 0.1s;
+ }
+ nav ul li:hover {
+    background-color: aqua;
+    border-radius: 10px;
+  
+ }
+ .nav__link{
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+ } /* The Header end here */
+ 
+ 
+ 
+ 
+ 
+ /*media screen start here*/
+@media screen and (max-width: 992px) {
+    
+}
+@media  screen and (max-width: 760px) {
+  html {
+    font-size: 55.5%
+  };  
+}
+@media screen and (max-width: 600px){
+    html {
+        font-size: 48.5%;
+    }
+    nav ul {
+       flex-direction: column;
+        gap: 2rem; 
+    }
+    header {
+        flex-direction: column;
+    }
+}
+/* responsicive ends here  */
+
+
+
+
+
+/* banner edditing start here*/
+.banner {
+    padding: 5rem 1rem;
+    display: flex;
+    position: absolute;
+   }
+.bannner__image{
+    height: 40rem;
+    width: 28rem;
+    margin-right: 5rem; 
+    border: 1px solid;
+    border-radius: 16px;
+    position: absolute;
+    top: 5rem;
+    right: 60rem;
+}
+.banner{
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    position: relative;
+}
+.banner__heading{
+   display: inline-block;
+   background-color: moccasin;
+   padding: 1rem;
+   position: absolute;
+   left: 37rem;
+   top: 5rem;
+   font-size: 40px;
+   border: 1px solid moccasin;
+   border-radius: 10px;
+}
+.banner__heading2{
+   display: inline-block;
+   padding: 1rem;
+   position: absolute;
+   top: 12rem;
+   left: 37rem;
+   font-size: 17px;
+}
+.banner__paragraph{
+  padding: 1rem;
+  position: absolute;
+  display: inline;
+  top: 15rem;
+  left: 36rem;
+  font-size: 22px;
+}
+.banner article {
+    flex-basis: 50%;
+    margin: 1rem;
+}
+.banner aside{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+/* bannner editing end here */
